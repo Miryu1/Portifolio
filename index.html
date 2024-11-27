@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Portfólio - Adriano Cesar Reis</title>
+    <style>
+        /* Reset */
+        * {
+            margin: 2;
+            padding: 1;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(to right, #1e3c72, #2a5298);
+        }
+
+        .hero {
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+            background: linear-gradient(to right, #1e3c72, #2a5298);
+        }
+
+        .hero .highlight {
+            color: #ffdd57;
+        }
+
+        .hero .btn {
+            margin-top: 20px;
+            padding: 10px 20px;
+            background: #ffdd57;
+            color: #333;
+            text-decoration: none;
+            border-radius: 25px;
+            font-weight: bold;
+        }
+
+        .navbar {
+            background: rgba(255, 255, 255, 0.9);
+            padding: 10px 20px;
+            display: flex;
+            justify-content: center;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .navbar ul {
+            list-style: none;
+            display: flex;
+            gap: 15px;
+        }
+
+        .navbar a {
+            color: #333;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 5px 10px;
+            border-radius: 5px;
+        }
+
+        .navbar a:hover {
+            background: #ffdd57;
+            color: #333;
+        }
+
+        .about-section,
+        .skills-section,
+        .projects-section {
+            padding: 60px 20px;
+            text-align: center;
+            color: white;
+        }
+
+        .about-section .profile-image {
+            margin-top: 20px;
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            border: 3px solid #ffdd57;
+        }
+
+        .skills-container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .skill {
+            width: 200px;
+        }
+
+        .bar {
+            background: #ddd;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        .progress {
+            height: 10px;
+            border-radius: 10px;
+        }
+
+        .progress.html {
+            width: 90%;
+            background: #e34c26;
+        }
+
+        .progress.css {
+            width: 85%;
+            background: #264de4;
+        }
+
+        .progress.js {
+            width: 70%;
+            background: #f0db4f;
+        }
+
+        .progress.python {
+            width: 80%;
+            background: #3776ab;
+        }
+
+        .project-cards {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .project-card {
+            background: white;
+            color: #333;
+            border-radius: 10px;
+            padding: 20px;
+            width: 300px;
+            text-align: center;
+        }
+
+        .project-card img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        .project-card .btn {
+            margin-top: 10px;
+            display: inline-block;
+            padding: 10px 20px;
+            background: #1e3c72;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        .project-card .btn:hover {
+            background: #ffdd57;
+            color: #333;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            color: white;
+            background: #1e3c72;
+        }
+
+        .github-icon {
+            margin: 2px;
+            padding: 1px;
+            width: 50px;
+            height: 50px;
+            background-color: black;
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 24px;
+            cursor: pointer;
+            text-decoration: none;
+        }
+
+        .github-icon:hover {
+            background-color: #ffdd57;
+        }
+
+    </style>
+</head>
+
+<body>
+    <header class="hero">
+        <div class="hero-content">
+            <h1>Olá! Eu sou o <span class="highlight">Adriano Cesar Reis</span></h1>
+            <p>20 anos, estudante de TI (Técnico Subsequente)</p>
+            <a href="#about" class="btn">Saiba mais sobre mim</a>
+        </div>
+    </header>
+
+    <nav class="navbar">
+        <ul>
+            <li><a href="#about">Sobre mim</a></li>
+            <li><a href="#skills">Habilidades</a></li>
+            <li><a href="#projects">Projetos</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="about" class="about-section">
+            <h2>Sobre mim</h2>
+            <p>Sou Adriano Cesar Reis, estudante apaixonado por tecnologia e desenvolvimento de software. Estou explorando o mundo da programação e desenvolvendo habilidades em linguagens como <span class="highlight">HTML, CSS, JavaScript</span> e muito mais. Amo resolver problemas e criar soluções que fazem a diferença.</p>
+            <img src="./img/adriano.png" alt="Adriano Cesar Reis" class="profile-image">
+        </section>
+
+        <section id="skills" class="skills-section">
+            <h2>Habilidades</h2>
+            <div class="skills-container">
+                <div class="skill">
+                    <h3>HTML</h3>
+                    <div class="bar"><div class="progress html"></div></div>
+                </div>
+                <div class="skill">
+                    <h3>CSS</h3>
+                    <div class="bar"><div class="progress css"></div></div>
+                </div>
+                <div class="skill">
+                    <h3>JavaScript</h3>
+                    <div class="bar"><div class="progress js"></div></div>
+                </div>
+                <div class="skill">
+                    <h3>Python</h3>
+                    <div class="bar"><div class="progress python"></div></div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="projects-section">
+            <h2>Projetos</h2>
+            <div class="project-cards">
+                <div class="project-card">
+                    <img src="./img/projeto1.png" alt="Projeto 1">
+                    <h3>Site Portfólio</h3>
+                    <p>Meu primeiro site portfólio, construído com HTML e CSS.</p>
+                    <a href="#" class="btn">Ver projeto</a>
+                </div>
+                <div class="project-card">
+                    <img src="./img/projeto2.png" alt="Projeto 2">
+                    <h3>Animação de flor utilizando o python</h3>
+                    <p>Uma aplicação utilizando o python.</p>
+                    <a href="#" class="btn">Ver projeto</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <a href="https://github.com/Miryu1" class="github-icon" target="_blank">
+            <i class="fab fa-github"></i> <!-- GitHub icon -->
+        </a>
+        <p>&copy; 2024 Portfólio. Todos os direitos reservados.</p>
+    </footer>
+
+    <!-- Link to Font Awesome for GitHub icon -->
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</body>
+
+</html>
